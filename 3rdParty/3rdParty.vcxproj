@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{73F2022A-CB9A-4F60-A2A2-83EA091D8760}</ProjectGuid>
+    <RootNamespace>My3rdParty</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\CnCPP\3rdParty\Base64Coder.cpp" />
+    <ClCompile Include="..\..\..\CnCPP\3rdParty\CalendarCtrl.cpp" />
+    <ClCompile Include="..\..\..\CnCPP\3rdParty\ClipboardBackup.cpp" />
+    <ClCompile Include="..\..\..\CnCPP\3rdParty\ColourPicker.cpp" />
+    <ClCompile Include="..\..\..\CnCPP\3rdParty\ColourPopup.cpp" />
+    <ClCompile Include="..\..\..\CnCPP\3rdParty\Compression.cpp" />
+    <ClCompile Include="..\..\..\CnCPP\3rdParty\DragDrop.cpp" />
+    <ClCompile Include="..\..\..\CnCPP\3rdParty\FileVersionInfo.cpp" />
+    <ClCompile Include="..\..\..\CnCPP\3rdParty\FontComboBox.cpp" />
+    <ClCompile Include="..\..\..\CnCPP\3rdParty\FPSMiniCalendarCtrl.cpp" />
+    <ClCompile Include="..\..\..\CnCPP\3rdParty\FPSMiniCalendarListCtrl.cpp" />
+    <ClCompile Include="..\..\..\CnCPP\3rdParty\ggets.cpp" />
+    <ClCompile Include="..\..\..\CnCPP\3rdParty\GUI.CPP" />
+    <ClCompile Include="..\..\..\CnCPP\3rdParty\HMXChart.cpp" />
+    <ClCompile Include="..\..\..\CnCPP\3rdParty\HMXDataset.cpp" />
+    <ClCompile Include="..\..\..\CnCPP\3rdParty\Ini.cpp" />
+    <ClCompile Include="..\..\..\CnCPP\3rdParty\LockableHeaderCtrl.cpp" />
+    <ClCompile Include="..\..\..\CnCPP\3rdParty\MemUtil.cpp" />
+    <ClCompile Include="..\..\..\CnCPP\3rdParty\msoutl.cpp" />
+    <ClCompile Include="..\..\..\CnCPP\3rdParty\msword.cpp" />
+    <ClCompile Include="..\..\..\CnCPP\3rdParty\myspell\affentry.cxx" />
+    <ClCompile Include="..\..\..\CnCPP\3rdParty\myspell\affixmgr.cxx" />
+    <ClCompile Include="..\..\..\CnCPP\3rdParty\myspell\csutil.cxx" />
+    <ClCompile Include="..\..\..\CnCPP\3rdParty\myspell\dictmgr.cxx" />
+    <ClCompile Include="..\..\..\CnCPP\3rdParty\myspell\hashmgr.cxx" />
+    <ClCompile Include="..\..\..\CnCPP\3rdParty\myspell\myspell.cxx" />
+    <ClCompile Include="..\..\..\CnCPP\3rdParty\myspell\mythes.cxx" />
+    <ClCompile Include="..\..\..\CnCPP\3rdParty\myspell\suggestmgr.cxx" />
+    <ClCompile Include="..\..\..\CnCPP\3rdParty\NewRandom.cpp" />
+    <ClCompile Include="..\..\..\CnCPP\3rdParty\ProgressCtrlWithTimer.cpp" />
+    <ClCompile Include="..\..\..\CnCPP\3rdParty\ProgressThread.cpp" />
+    <ClCompile Include="..\..\..\CnCPP\3rdParty\RegUtil.cpp" />
+    <ClCompile Include="..\..\..\CnCPP\3rdParty\rijndael.cpp" />
+    <ClCompile Include="..\..\..\CnCPP\3rdParty\rtf2html\Util.cpp" />
+    <ClCompile Include="..\..\..\CnCPP\3rdParty\sha2.cpp" />
+    <ClCompile Include="..\..\..\CnCPP\3rdParty\ShellIcons.cpp" />
+    <ClCompile Include="..\..\..\CnCPP\3rdParty\SizeComboBox.cpp" />
+    <ClCompile Include="..\..\..\CnCPP\3rdParty\StatLink.cpp" />
+    <ClCompile Include="..\..\..\CnCPP\3rdParty\StatusBarACT.cpp" />
+    <ClCompile Include="..\..\..\CnCPP\3rdParty\StdioFileEx.cpp" />
+    <ClCompile Include="..\..\..\CnCPP\3rdParty\XHTMLStatic.cpp" />
+    <ClCompile Include="..\..\..\CnCPP\3rdParty\XmlNodeWrapper.cpp" />
+    <ClCompile Include="..\..\..\CnCPP\3rdParty\XNamedColors.cpp" />
+    <ClCompile Include="..\..\..\CnCPP\3rdParty\XPTabCtrl.cpp" />
+    <ClCompile Include="Base64Coder.cpp" />
+    <ClCompile Include="CalendarCtrl.cpp" />
+    <ClCompile Include="ClipboardBackup.cpp" />
+    <ClCompile Include="ColourPicker.cpp" />
+    <ClCompile Include="ColourPopup.cpp" />
+    <ClCompile Include="Compression.cpp" />
+    <ClCompile Include="DragDrop.cpp" />
+    <ClCompile Include="FileVersionInfo.cpp" />
+    <ClCompile Include="FontComboBox.cpp" />
+    <ClCompile Include="FPSMiniCalendarCtrl.cpp" />
+    <ClCompile Include="FPSMiniCalendarListCtrl.cpp" />
+    <ClCompile Include="ggets.cpp" />
+    <ClCompile Include="GUI.CPP" />
+    <ClCompile Include="HMXChart.cpp" />
+    <ClCompile Include="HMXDataset.cpp" />
+    <ClCompile Include="Ini.cpp" />
+    <ClCompile Include="LockableHeaderCtrl.cpp" />
+    <ClCompile Include="MemUtil.cpp" />
+    <ClCompile Include="msoutl.cpp" />
+    <ClCompile Include="msword.cpp" />
+    <ClCompile Include="myspell\affentry.cxx" />
+    <ClCompile Include="myspell\affixmgr.cxx" />
+    <ClCompile Include="myspell\csutil.cxx" />
+    <ClCompile Include="myspell\dictmgr.cxx" />
+    <ClCompile Include="myspell\hashmgr.cxx" />
+    <ClCompile Include="myspell\myspell.cxx" />
+    <ClCompile Include="myspell\mythes.cxx" />
+    <ClCompile Include="myspell\suggestmgr.cxx" />
+    <ClCompile Include="NewRandom.cpp" />
+    <ClCompile Include="ProgressCtrlWithTimer.cpp" />
+    <ClCompile Include="ProgressThread.cpp" />
+    <ClCompile Include="RegUtil.cpp" />
+    <ClCompile Include="rijndael.cpp" />
+    <ClCompile Include="rtf2html\Util.cpp" />
+    <ClCompile Include="sha2.cpp" />
+    <ClCompile Include="ShellIcons.cpp" />
+    <ClCompile Include="SizeComboBox.cpp" />
+    <ClCompile Include="StatLink.cpp" />
+    <ClCompile Include="StatusBarACT.cpp" />
+    <ClCompile Include="StdioFileEx.cpp" />
+    <ClCompile Include="XHTMLStatic.cpp" />
+    <ClCompile Include="XmlNodeWrapper.cpp" />
+    <ClCompile Include="XNamedColors.cpp" />
+    <ClCompile Include="XPTabCtrl.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\CnCPP\3rdParty\Base64Coder.h" />
+    <ClInclude Include="..\..\..\CnCPP\3rdParty\CalendarCtrl.h" />
+    <ClInclude Include="..\..\..\CnCPP\3rdParty\ClipboardBackup.h" />
+    <ClInclude Include="..\..\..\CnCPP\3rdParty\ColourPicker.h" />
+    <ClInclude Include="..\..\..\CnCPP\3rdParty\ColourPopup.h" />
+    <ClInclude Include="..\..\..\CnCPP\3rdParty\Compression.h" />
+    <ClInclude Include="..\..\..\CnCPP\3rdParty\DragDrop.h" />
+    <ClInclude Include="..\..\..\CnCPP\3rdParty\FileVersionInfo.h" />
+    <ClInclude Include="..\..\..\CnCPP\3rdParty\FontComboBox.h" />
+    <ClInclude Include="..\..\..\CnCPP\3rdParty\FontPreviewCombo.h" />
+    <ClInclude Include="..\..\..\CnCPP\3rdParty\FPSMiniCalendarCtrl.h" />
+    <ClInclude Include="..\..\..\CnCPP\3rdParty\FPSMiniCalendarListCtrl.h" />
+    <ClInclude Include="..\..\..\CnCPP\3rdParty\ggets.h" />
+    <ClInclude Include="..\..\..\CnCPP\3rdParty\GUI.H" />
+    <ClInclude Include="..\..\..\CnCPP\3rdParty\HMXChart.h" />
+    <ClInclude Include="..\..\..\CnCPP\3rdParty\HMXDataset.h" />
+    <ClInclude Include="..\..\..\CnCPP\3rdParty\Ini.h" />
+    <ClInclude Include="..\..\..\CnCPP\3rdParty\LockableHeaderCtrl.h" />
+    <ClInclude Include="..\..\..\CnCPP\3rdParty\MemDC.h" />
+    <ClInclude Include="..\..\..\CnCPP\3rdParty\MemUtil.h" />
+    <ClInclude Include="..\..\..\CnCPP\3rdParty\msoutl.h" />
+    <ClInclude Include="..\..\..\CnCPP\3rdParty\msword.h" />
+    <ClInclude Include="..\..\..\CnCPP\3rdParty\myspell\affentry.hxx" />
+    <ClInclude Include="..\..\..\CnCPP\3rdParty\myspell\affixmgr.hxx" />
+    <ClInclude Include="..\..\..\CnCPP\3rdParty\myspell\atypes.hxx" />
+    <ClInclude Include="..\..\..\CnCPP\3rdParty\myspell\baseaffix.hxx" />
+    <ClInclude Include="..\..\..\CnCPP\3rdParty\myspell\csutil.hxx" />
+    <ClInclude Include="..\..\..\CnCPP\3rdParty\myspell\dictmgr.hxx" />
+    <ClInclude Include="..\..\..\CnCPP\3rdParty\myspell\hashmgr.hxx" />
+    <ClInclude Include="..\..\..\CnCPP\3rdParty\myspell\htypes.hxx" />
+    <ClInclude Include="..\..\..\CnCPP\3rdParty\myspell\myspell.hxx" />
+    <ClInclude Include="..\..\..\CnCPP\3rdParty\myspell\mythes.hxx" />
+    <ClInclude Include="..\..\..\CnCPP\3rdParty\myspell\suggestmgr.hxx" />
+    <ClInclude Include="..\..\..\CnCPP\3rdParty\NewRandom.h" />
+    <ClInclude Include="..\..\..\CnCPP\3rdParty\ProgressCtrlWithTimer.h" />
+    <ClInclude Include="..\..\..\CnCPP\3rdParty\ProgressThread.h" />
+    <ClInclude Include="..\..\..\CnCPP\3rdParty\RegUtil.h" />
+    <ClInclude Include="..\..\..\CnCPP\3rdParty\rijndael.h" />
+    <ClInclude Include="..\..\..\CnCPP\3rdParty\rtf2html\Util.h" />
+    <ClInclude Include="..\..\..\CnCPP\3rdParty\Schemadef.h" />
+    <ClInclude Include="..\..\..\CnCPP\3rdParty\SendFileTo.h" />
+    <ClInclude Include="..\..\..\CnCPP\3rdParty\sha2.h" />
+    <ClInclude Include="..\..\..\CnCPP\3rdParty\ShellIcons.h" />
+    <ClInclude Include="..\..\..\CnCPP\3rdParty\SizeComboBox.h" />
+    <ClInclude Include="..\..\..\CnCPP\3rdParty\StatLink.h" />
+    <ClInclude Include="..\..\..\CnCPP\3rdParty\StatusBarACT.h" />
+    <ClInclude Include="..\..\..\CnCPP\3rdParty\StdioFileEx.h" />
+    <ClInclude Include="..\..\..\CnCPP\3rdParty\TemplateSmartPtr.h" />
+    <ClInclude Include="..\..\..\CnCPP\3rdParty\Tmschema.h" />
+    <ClInclude Include="..\..\..\CnCPP\3rdParty\TOM.h" />
+    <ClInclude Include="..\..\..\CnCPP\3rdParty\Uxtheme.h" />
+    <ClInclude Include="..\..\..\CnCPP\3rdParty\XHTMLStatic.h" />
+    <ClInclude Include="..\..\..\CnCPP\3rdParty\XmlNodeWrapper.h" />
+    <ClInclude Include="..\..\..\CnCPP\3rdParty\XNamedColors.h" />
+    <ClInclude Include="..\..\..\CnCPP\3rdParty\XPTabCtrl.h" />
+    <ClInclude Include="..\..\..\CnCPP\3rdParty\Zlib\ZCONF.H" />
+    <ClInclude Include="..\..\..\CnCPP\3rdParty\Zlib\ZLIB.H" />
+    <ClInclude Include="Base64Coder.h" />
+    <ClInclude Include="CalendarCtrl.h" />
+    <ClInclude Include="ClipboardBackup.h" />
+    <ClInclude Include="ColourPicker.h" />
+    <ClInclude Include="ColourPopup.h" />
+    <ClInclude Include="Compression.h" />
+    <ClInclude Include="DragDrop.h" />
+    <ClInclude Include="FileVersionInfo.h" />
+    <ClInclude Include="FontComboBox.h" />
+    <ClInclude Include="FontPreviewCombo.h" />
+    <ClInclude Include="FPSMiniCalendarCtrl.h" />
+    <ClInclude Include="FPSMiniCalendarListCtrl.h" />
+    <ClInclude Include="ggets.h" />
+    <ClInclude Include="GUI.H" />
+    <ClInclude Include="HMXChart.h" />
+    <ClInclude Include="HMXDataset.h" />
+    <ClInclude Include="Ini.h" />
+    <ClInclude Include="LockableHeaderCtrl.h" />
+    <ClInclude Include="MemDC.h" />
+    <ClInclude Include="MemUtil.h" />
+    <ClInclude Include="msoutl.h" />
+    <ClInclude Include="msword.h" />
+    <ClInclude Include="myspell\affentry.hxx" />
+    <ClInclude Include="myspell\affixmgr.hxx" />
+    <ClInclude Include="myspell\atypes.hxx" />
+    <ClInclude Include="myspell\baseaffix.hxx" />
+    <ClInclude Include="myspell\csutil.hxx" />
+    <ClInclude Include="myspell\dictmgr.hxx" />
+    <ClInclude Include="myspell\hashmgr.hxx" />
+    <ClInclude Include="myspell\htypes.hxx" />
+    <ClInclude Include="myspell\myspell.hxx" />
+    <ClInclude Include="myspell\mythes.hxx" />
+    <ClInclude Include="myspell\suggestmgr.hxx" />
+    <ClInclude Include="NewRandom.h" />
+    <ClInclude Include="ProgressCtrlWithTimer.h" />
+    <ClInclude Include="ProgressThread.h" />
+    <ClInclude Include="RegUtil.h" />
+    <ClInclude Include="rijndael.h" />
+    <ClInclude Include="rtf2html\Util.h" />
+    <ClInclude Include="Schemadef.h" />
+    <ClInclude Include="SendFileTo.h" />
+    <ClInclude Include="sha2.h" />
+    <ClInclude Include="ShellIcons.h" />
+    <ClInclude Include="SizeComboBox.h" />
+    <ClInclude Include="StatLink.h" />
+    <ClInclude Include="StatusBarACT.h" />
+    <ClInclude Include="StdioFileEx.h" />
+    <ClInclude Include="TemplateSmartPtr.h" />
+    <ClInclude Include="Tmschema.h" />
+    <ClInclude Include="TOM.h" />
+    <ClInclude Include="Uxtheme.h" />
+    <ClInclude Include="XHTMLStatic.h" />
+    <ClInclude Include="XmlNodeWrapper.h" />
+    <ClInclude Include="XNamedColors.h" />
+    <ClInclude Include="XPTabCtrl.h" />
+    <ClInclude Include="Zlib\ZCONF.H" />
+    <ClInclude Include="Zlib\ZLIB.H" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

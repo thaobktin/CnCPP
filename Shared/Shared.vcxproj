@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{F9E04C02-1FBA-4344-90D7-B027708B1E1F}</ProjectGuid>
+    <RootNamespace>Shared</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AboutDlg.cpp" />
+    <ClCompile Include="autocombobox.cpp" />
+    <ClCompile Include="AutoFlag.cpp" />
+    <ClCompile Include="BinaryData.cpp" />
+    <ClCompile Include="browserdlg.cpp" />
+    <ClCompile Include="checkcombobox.cpp" />
+    <ClCompile Include="checklistboxex.cpp" />
+    <ClCompile Include="colorbutton.cpp" />
+    <ClCompile Include="colorcombobox.cpp" />
+    <ClCompile Include="ContentCtrl.cpp" />
+    <ClCompile Include="ContentMgr.cpp" />
+    <ClCompile Include="contenttypecombobox.cpp" />
+    <ClCompile Include="custombutton.cpp" />
+    <ClCompile Include="DateHelper.cpp" />
+    <ClCompile Include="DateTimeCtrlEx.cpp" />
+    <ClCompile Include="deferWndMove.cpp" />
+    <ClCompile Include="DialogHelper.cpp" />
+    <ClCompile Include="DlgUnits.cpp" />
+    <ClCompile Include="DockManager.cpp" />
+    <ClCompile Include="driveinfo.cpp" />
+    <ClCompile Include="EditShortcutMgr.cpp" />
+    <ClCompile Include="EnBitmap.cpp" />
+    <ClCompile Include="EnBitmapEx.cpp" />
+    <ClCompile Include="enbrowserctrl.cpp" />
+    <ClCompile Include="EnCheckComboBox.cpp" />
+    <ClCompile Include="encolordialog.cpp" />
+    <ClCompile Include="EnCommandLineInfo.cpp" />
+    <ClCompile Include="enedit.cpp" />
+    <ClCompile Include="enfiledialog.cpp" />
+    <ClCompile Include="EnHeaderCtrl.cpp" />
+    <ClCompile Include="enlistctrl.cpp" />
+    <ClCompile Include="EnMenu.cpp" />
+    <ClCompile Include="EnRecentFileList.cpp" />
+    <ClCompile Include="enstatic.cpp" />
+    <ClCompile Include="EnString.cpp" />
+    <ClCompile Include="entoolbar.cpp" />
+    <ClCompile Include="fileedit.cpp" />
+    <ClCompile Include="FILEMISC.CPP" />
+    <ClCompile Include="FileRegister.cpp" />
+    <ClCompile Include="FocusWatcher.cpp" />
+    <ClCompile Include="FolderDialog.cpp" />
+    <ClCompile Include="GdiPlus.cpp" />
+    <ClCompile Include="GraphicsMisc.cpp" />
+    <ClCompile Include="GroupLine.cpp" />
+    <ClCompile Include="HoldRedraw.cpp" />
+    <ClCompile Include="hotkeyctrlex.cpp" />
+    <ClCompile Include="HotTracker.cpp" />
+    <ClCompile Include="ImageProcessors.cpp" />
+    <ClCompile Include="ImportExportMgr.cpp" />
+    <ClCompile Include="InputListCtrl.cpp" />
+    <ClCompile Include="LightBox.cpp" />
+    <ClCompile Include="Localizer.cpp" />
+    <ClCompile Include="MASKEDIT.CPP" />
+    <ClCompile Include="menubutton.cpp" />
+    <ClCompile Include="MenuIconMgr.cpp" />
+    <ClCompile Include="Misc.cpp" />
+    <ClCompile Include="monthcombobox.cpp" />
+    <ClCompile Include="MouseWheelMgr.cpp" />
+    <ClCompile Include="MSWordHelper.cpp" />
+    <ClCompile Include="NcGutter.cpp" />
+    <ClCompile Include="OrderedTreeCtrl.cpp" />
+    <ClCompile Include="OSVersion.cpp" />
+    <ClCompile Include="OutlookHelper.cpp" />
+    <ClCompile Include="ownerdrawcomboboxbase.cpp" />
+    <ClCompile Include="passworddialog.cpp" />
+    <ClCompile Include="popupEditctrl.cpp" />
+    <ClCompile Include="popupListboxctrl.cpp" />
+    <ClCompile Include="Preferences.cpp" />
+    <ClCompile Include="PreferencesBase.cpp" />
+    <ClCompile Include="ProgressDlg.cpp" />
+    <ClCompile Include="PropertyPageHost.cpp" />
+    <ClCompile Include="RCCtrlParser.cpp" />
+    <ClCompile Include="Regkey.cpp" />
+    <ClCompile Include="RemoteFile.cpp" />
+    <ClCompile Include="RemoteFileDialog.cpp" />
+    <ClCompile Include="richeditbasectrl.cpp" />
+    <ClCompile Include="RichEditHelper.cpp" />
+    <ClCompile Include="RichEditNcBorder.cpp" />
+    <ClCompile Include="RichEditSpellCheck.cpp" />
+    <ClCompile Include="RuntimeDlg.cpp" />
+    <ClCompile Include="SaveFocus.cpp" />
+    <ClCompile Include="ScrollingPropertyPageHost.cpp" />
+    <ClCompile Include="ServerDlg.cpp" />
+    <ClCompile Include="ShortcutManager.cpp" />
+    <ClCompile Include="SpellCheckDlg.cpp" />
+    <ClCompile Include="SpellChecker.cpp" />
+    <ClCompile Include="StatusBarProgress.cpp" />
+    <ClCompile Include="StickiesAPI.cpp" />
+    <ClCompile Include="StickiesWnd.cpp" />
+    <ClCompile Include="Subclass.cpp" />
+    <ClCompile Include="symbolbutton.cpp" />
+    <ClCompile Include="SysImageList.cpp" />
+    <ClCompile Include="tabbedcombobox.cpp" />
+    <ClCompile Include="tabctrlex.cpp" />
+    <ClCompile Include="TasklistStorageMgr.cpp" />
+    <ClCompile Include="Themed.cpp" />
+    <ClCompile Include="timecombobox.cpp" />
+    <ClCompile Include="TimeEdit.cpp" />
+    <ClCompile Include="TimeHelper.cpp" />
+    <ClCompile Include="ToolbarHelper.cpp" />
+    <ClCompile Include="TransTextMgr.cpp" />
+    <ClCompile Include="TRAYICON.CPP" />
+    <ClCompile Include="TreeCtrlHelper.cpp" />
+    <ClCompile Include="TreeDragDropHelper.cpp" />
+    <ClCompile Include="TreeListSyncer.cpp" />
+    <ClCompile Include="TreeSelectionHelper.cpp" />
+    <ClCompile Include="UIExtensionMgr.cpp" />
+    <ClCompile Include="UIExtensionUIHelper.cpp" />
+    <ClCompile Include="UIExtensionWnd.cpp" />
+    <ClCompile Include="UIThemeFile.cpp" />
+    <ClCompile Include="urlricheditctrl.cpp" />
+    <ClCompile Include="webbrowserctrl.cpp" />
+    <ClCompile Include="weekdaychecklistbox.cpp" />
+    <ClCompile Include="Weekdaycombobox.cpp" />
+    <ClCompile Include="WinClasses.cpp" />
+    <ClCompile Include="WndPrompt.cpp" />
+    <ClCompile Include="XmlFile.cpp" />
+    <ClCompile Include="xmlfileex.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AboutDlg.h" />
+    <ClInclude Include="autocombobox.h" />
+    <ClInclude Include="AutoFlag.h" />
+    <ClInclude Include="BinaryData.h" />
+    <ClInclude Include="browserdlg.h" />
+    <ClInclude Include="checkcombobox.h" />
+    <ClInclude Include="checklistboxex.h" />
+    <ClInclude Include="colorbutton.h" />
+    <ClInclude Include="colorcombobox.h" />
+    <ClInclude Include="ColorDef.h" />
+    <ClInclude Include="ContentCtrl.h" />
+    <ClInclude Include="ContentMgr.h" />
+    <ClInclude Include="contenttypecombobox.h" />
+    <ClInclude Include="custombutton.h" />
+    <ClInclude Include="DateHelper.h" />
+    <ClInclude Include="DateTimeCtrlEx.h" />
+    <ClInclude Include="deferWndMove.h" />
+    <ClInclude Include="DialogHelper.h" />
+    <ClInclude Include="DlgUnits.h" />
+    <ClInclude Include="DockManager.h" />
+    <ClInclude Include="driveinfo.h" />
+    <ClInclude Include="EditShortcutMgr.h" />
+    <ClInclude Include="EnBitmap.h" />
+    <ClInclude Include="EnBitmapEx.h" />
+    <ClInclude Include="enbrowserctrl.h" />
+    <ClInclude Include="EnCheckComboBox.h" />
+    <ClInclude Include="encolordialog.h" />
+    <ClInclude Include="EnCommandLineInfo.h" />
+    <ClInclude Include="enedit.h" />
+    <ClInclude Include="enfiledialog.h" />
+    <ClInclude Include="EnHeaderCtrl.h" />
+    <ClInclude Include="enlistctrl.h" />
+    <ClInclude Include="EnMenu.h" />
+    <ClInclude Include="EnRecentFileList.h" />
+    <ClInclude Include="enstatic.h" />
+    <ClInclude Include="EnString.h" />
+    <ClInclude Include="entoolbar.h" />
+    <ClInclude Include="fileedit.h" />
+    <ClInclude Include="FILEMISC.H" />
+    <ClInclude Include="FileRegister.h" />
+    <ClInclude Include="FocusWatcher.h" />
+    <ClInclude Include="FolderDialog.h" />
+    <ClInclude Include="GdiPlus.h" />
+    <ClInclude Include="GraphicsMisc.h" />
+    <ClInclude Include="GroupLine.h" />
+    <ClInclude Include="HoldRedraw.h" />
+    <ClInclude Include="HookMgr.h" />
+    <ClInclude Include="HookWndMgr.h" />
+    <ClInclude Include="hotkeyctrlex.h" />
+    <ClInclude Include="HotTracker.h" />
+    <ClInclude Include="HtmlCharMap.h" />
+    <ClInclude Include="IContentControl.h" />
+    <ClInclude Include="IEncryption.h" />
+    <ClInclude Include="IImportExport.h" />
+    <ClInclude Include="ImageProcessors.h" />
+    <ClInclude Include="ImportExportMgr.h" />
+    <ClInclude Include="InputListCtrl.h" />
+    <ClInclude Include="IPreferences.h" />
+    <ClInclude Include="ISpellCheck.h" />
+    <ClInclude Include="ITaskList.h" />
+    <ClInclude Include="ITaskListStorage.h" />
+    <ClInclude Include="ITransText.h" />
+    <ClInclude Include="IUIExtension.h" />
+    <ClInclude Include="LightBox.h" />
+    <ClInclude Include="Localizer.h" />
+    <ClInclude Include="MASKEDIT.H" />
+    <ClInclude Include="menubutton.h" />
+    <ClInclude Include="MenuIconMgr.h" />
+    <ClInclude Include="Misc.h" />
+    <ClInclude Include="monthcombobox.h" />
+    <ClInclude Include="MouseWheelMgr.h" />
+    <ClInclude Include="MSWordHelper.h" />
+    <ClInclude Include="NcGutter.h" />
+    <ClInclude Include="OrderedTreeCtrl.h" />
+    <ClInclude Include="OSVersion.h" />
+    <ClInclude Include="OutlookHelper.h" />
+    <ClInclude Include="ownerdrawcomboboxbase.h" />
+    <ClInclude Include="passworddialog.h" />
+    <ClInclude Include="popupEditCtrl.h" />
+    <ClInclude Include="popupListboxctrl.h" />
+    <ClInclude Include="Preferences.h" />
+    <ClInclude Include="PreferencesBase.h" />
+    <ClInclude Include="ProgressDlg.h" />
+    <ClInclude Include="PropertyPageHost.h" />
+    <ClInclude Include="RCCtrlParser.h" />
+    <ClInclude Include="Regkey.h" />
+    <ClInclude Include="RemoteFile.h" />
+    <ClInclude Include="RemoteFileDialog.h" />
+    <ClInclude Include="richeditbasectrl.h" />
+    <ClInclude Include="RichEditHelper.h" />
+    <ClInclude Include="RichEditNcBorder.h" />
+    <ClInclude Include="RichEditSpellCheck.h" />
+    <ClInclude Include="RuntimeDlg.h" />
+    <ClInclude Include="SaveFocus.h" />
+    <ClInclude Include="ScrollingPropertyPageHost.h" />
+    <ClInclude Include="ServerDlg.h" />
+    <ClInclude Include="ShortcutManager.h" />
+    <ClInclude Include="SpellCheckDlg.h" />
+    <ClInclude Include="SpellChecker.h" />
+    <ClInclude Include="StatusBarProgress.h" />
+    <ClInclude Include="StickiesAPI.h" />
+    <ClInclude Include="StickiesWnd.h" />
+    <ClInclude Include="stringres.h" />
+    <ClInclude Include="Subclass.h" />
+    <ClInclude Include="symbolbutton.h" />
+    <ClInclude Include="SysImageList.h" />
+    <ClInclude Include="tabbedcombobox.h" />
+    <ClInclude Include="tabctrlex.h" />
+    <ClInclude Include="TaskListStorageMgr.h" />
+    <ClInclude Include="Themed.h" />
+    <ClInclude Include="timecombobox.h" />
+    <ClInclude Include="TimeEdit.h" />
+    <ClInclude Include="TimeHelper.h" />
+    <ClInclude Include="ToolbarHelper.h" />
+    <ClInclude Include="TransTextMgr.h" />
+    <ClInclude Include="TRAYICON.H" />
+    <ClInclude Include="TreeCtrlHelper.h" />
+    <ClInclude Include="TreeDragDropHelper.h" />
+    <ClInclude Include="TreeListSyncer.h" />
+    <ClInclude Include="TreeSelectionHelper.h" />
+    <ClInclude Include="UIExtensionMgr.h" />
+    <ClInclude Include="UIExtensionUIHelper.h" />
+    <ClInclude Include="UIExtensionWnd.h" />
+    <ClInclude Include="UITHEME.h" />
+    <ClInclude Include="UIThemeFile.h" />
+    <ClInclude Include="urlricheditctrl.h" />
+    <ClInclude Include="wclassdefines.h" />
+    <ClInclude Include="webbrowserctrl.h" />
+    <ClInclude Include="weekdaychecklistbox.h" />
+    <ClInclude Include="Weekdaycombobox.h" />
+    <ClInclude Include="WinClasses.h" />
+    <ClInclude Include="winstyles.h" />
+    <ClInclude Include="WndPrompt.h" />
+    <ClInclude Include="XmlCharMap.h" />
+    <ClInclude Include="XmlFile.h" />
+    <ClInclude Include="xmlfileex.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
